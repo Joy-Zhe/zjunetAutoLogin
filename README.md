@@ -11,7 +11,7 @@ cd zjunetAutoLogin
 
 + 构建docker
 ```shell
-docker build -t zjunetautologin .
+docker build -t zjunet-autologin .
 ```
 
 + 运行docker
