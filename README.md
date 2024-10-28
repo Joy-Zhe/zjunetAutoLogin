@@ -14,6 +14,14 @@ cd zjunetAutoLogin
 docker build -t zjunet-autologin .
 ```
 
+> 当然也可以直接选择我构建好的镜像
+
+```shell
+docker pull joyzheng03/zjunet-autologin:latest
+```
+
+##  2. Docker运行
+
 + 运行docker
 ```shell
 docker run --rm -e STUDENT_ID="<your_stu_id>" -e STUDENT_OWD="<your_zjuvpn_password>" zjunetautologin
