@@ -12,7 +12,7 @@ RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd6
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
 
-COPY zjunetAutoLogin.py.py /app/zjunetAutoLogin.py
+COPY zjunetAutoLogin.py /app/zjunetAutoLogin.py
 
 ENV STUDENT_ID="<Your StudentID>"
 ENV STUDENT_PWD="<Your ZJUnetPassword>"
