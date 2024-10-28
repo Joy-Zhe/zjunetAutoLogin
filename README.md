@@ -24,7 +24,7 @@ docker pull joyzheng03/zjunet-autologin:latest
 
 + 运行docker
 ```shell
-docker run --rm --network="host" -e STUDENT_ID="<your_stu_id>" -e STUDENT_OWD="<your_zjuvpn_password>" joyzheng03/zjunet-autologin:latest
+docker run --rm --network="host" -e STUDENT_ID="<your_stu_id>" -e STUDENT_PWD="<your_zjuvpn_password>" joyzheng03/zjunet-autologin:latest
 ```
 
 + 设置开机自启动
