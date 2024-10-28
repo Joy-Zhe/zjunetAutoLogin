@@ -11,12 +11,12 @@ cd zjunetAutoLogin
 
 + 构建docker
 ```shell
-docker build -t zjunetAutoLogin 
+docker build -t zjunetautologin .
 ```
 
 + 运行docker
 ```shell
-docker run --rm -e STUDENT_ID="<your_stu_id>" -e STUDENT_OWD="<your_zjuvpn_password>" zjunetAutoLogin
+docker run --rm -e STUDENT_ID="<your_stu_id>" -e STUDENT_OWD="<your_zjuvpn_password>" zjunetautologin
 ```
 
 + 设置开机自启动
