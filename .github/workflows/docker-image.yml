@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag zjunet-autologin:latest
+        run: docker build . --file Dockerfile --tag joyzheng03/zjunet-autologin:latest
 
       - name: Push the Docker image
-        run: docker push zjunet-autologin:latest
+        run: docker push joyzheng03/zjunet-autologin:latest
