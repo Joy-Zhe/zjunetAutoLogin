@@ -6,7 +6,7 @@ while true; do
         echo "网络正常，连接 baidu.com 成功"
     else
         echo "无法连接 baidu.com，尝试运行登录脚本..."
-        python /app/login_script.py
+        python /app/zjunetAutoLogin.py
     fi
 
     # 休眠 5 分钟后再进行下一次检测
