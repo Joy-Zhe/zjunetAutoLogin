@@ -16,6 +16,8 @@ RUN pip install -r /app/requirements.txt
 COPY zjunetAutoLogin.py /app/zjunetAutoLogin.py
 COPY checkNet.sh /app/checkNet.sh
 
+RUN chmod +x /app/checkNet.sh
+
 ENV STUDENT_ID="<Your StudentID>"
 ENV STUDENT_PWD="<Your ZJUnetPassword>"
 
