@@ -39,7 +39,7 @@ RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd6
     apt-get --fix-broken install ./google-chrome-stable_current_amd64.deb && \
     rm google-chrome-stable_current_amd64.deb
 
-RUN CHROMEDRIVER_VERSION=$(echo $CHROME_VERSION | cut -d '.' -f 1-4) && \
+RUN CHROMEDRIVER_VERSION=$(google-chrome-stable --version | cut -d ' ' -f 3) && \
     echo "Chromedriver version: $CHROMEDRIVER_VERSION"
     
 RUN wget -q "https://storage.googleapis.com/chrome-for-testing-public/${CHROMEDRIVER_VERSION}/linux64/chromedriver-linux64.zip" -O chromedriver_linux64.zip && \
