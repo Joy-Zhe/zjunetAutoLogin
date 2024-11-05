@@ -43,9 +43,9 @@ RUN CHROMEDRIVER_VERSION=$(google-chrome-stable --version | cut -d ' ' -f 3) && 
     echo "Chromedriver version: $CHROMEDRIVER_VERSION" && \
     wget -q "https://storage.googleapis.com/chrome-for-testing-public/${CHROMEDRIVER_VERSION}/linux64/chromedriver-linux64.zip" -O chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip && \
-    mv chromedriver /usr/bin/chromedriver && \
+    mv chromedriver-linux64/chromedriver /usr/bin/chromedriver && \
     chmod +x /usr/bin/chromedriver && \
-    rm chromedriver_linux64.zip
+    rm -r chromedriver_linux64.zip chromedriver_linux64
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
