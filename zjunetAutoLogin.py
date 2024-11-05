@@ -26,6 +26,7 @@ try:
 
     login_btn = browser.find_element(By.ID, 'login')
     login_btn.click()
+    time.sleep(5)
 
 finally:
     browser.quit()
